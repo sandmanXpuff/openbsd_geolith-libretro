@@ -714,7 +714,7 @@ else
 endif
 
 ifeq (,$(findstring msvc,$(platform)))
-LIBS += -lm
+LIBS += -lm -lc
 endif
 
 ifeq ($(platform), theos_ios)
